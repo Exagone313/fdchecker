@@ -24,6 +24,10 @@
 # define STAT_MAX 20
 #endif
 
+#ifndef S_IFWHT
+# define S_IFWHT 0
+#endif
+
 static char	filetype(mode_t fmt)
 {
 	if (fmt == S_IFDIR)
